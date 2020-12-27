@@ -1,0 +1,22 @@
+<p>User registration</p>
+username: &nbsp;
+<input class="form-control" type="text" [formControl]="username"> <br> <br>
+password: &nbsp;
+<input class="form-control" type="text" [formControl]="password"> <br> <br>
+<p> {{ message }} </p>
+<button class="btn btn-primary" (click)="register()">Register</button>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Login</th>
+            <th>Parol</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let elem of users$ | async">
+            <td> {{ elem.username }}</td>
+            <td> {{ elem.password }} </td>
+            <td> <button class="btn btn-danger" (click)="remove(elem)">X</button> </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-info container-fluid">
+  <a class="navbar-brand" href="#">
+    BOOK STORE</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/productslist">Kitoblar ro`yxati <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/cart">Savatcha</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/productadd">Mahsulot qo'shish</a>
+      </li>
+      <li class="nav-item float-right">
+        <a class="nav-link" (click)="logout()" href="#">Logout</a>
+      </li>
+    </ul>
+    <div>
+      <form *ngIf="qidiruv" class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-3" type="text" placeholder="Mahsulotni qidirish" aria-label="Search">
+        <button class="btn btn-success my-2 my-sm-1" type="submit">Qidirish</button>
+      </form>
+    </div>
+  </div>
+</nav>

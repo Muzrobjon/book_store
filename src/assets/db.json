@@ -1,0 +1,26 @@
+{
+    "products": [
+        {
+            "id": "0",
+            "img": "assets/kitob1.png",
+            "title": "Deyl Karnegi Muvofaqqiyat kaliti",
+            "desc": "Yer yuzida Deyl Karnegini kitobini uqimagan odam bulmasa kerak!"
+          },
+          {
+            "id": "1",
+            "img": "assets/kitob2.png",
+            "title": "Chingiz Aytmatov Oq kema",
+            "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt "},
+          {
+            "id": "1",
+            "img": "assets/kitob3.png",
+            "title": "Napaleon b. Boy bo'lish sirlari",
+            "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt "            
+          },
+          {
+            "id": "1",
+            "img": "assets/kitob4.png",
+            "title": "M.Norbekov G'ayri ixtiyoriy ong mo'jizalari",
+            "desc": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt"}
+    ]
+}

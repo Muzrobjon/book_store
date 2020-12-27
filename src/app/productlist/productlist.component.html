@@ -1,0 +1,30 @@
+<app-navbar></app-navbar>
+<div class="conatainer-fluid p-4 text-center text-white bg-info">
+  <h1>Kitoblar ro'yxati</h1>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="katak">
+        <div class="mr-3" *ngFor="let item of booklist | async">
+            <div class="card mt-3" style="width: 18rem;">
+                <img [src]="item.img" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-text"> {{ item.title }} </h4>
+                    <h5>Narxi: {{item.price}} so'm</h5>
+                    <button (click)="batafsil(item)" class="btn btn-primary ml-5 m-auto">Batafsil</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-2">
+      <div class="card mt-3 p-4 mr-3 category">
+        <h2>Kategoriya</h2>
+        <div class="cart-body">
+          ndjfdjkfhsdjkfhsdjkdhf
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

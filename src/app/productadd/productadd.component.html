@@ -1,0 +1,17 @@
+<app-navbar [qidiruv]="false"></app-navbar>
+<div class="conatainer-fluid p-4 text-center text-white bg-info">
+    <a routerLink="/productslist" class="float-left text-white pt-2">Asosiy sahifaga qaytish</a>
+    <h1>Mahsulot qo'shish</h1>
+  </div>
+<div class="container mt-2">
+    <label for="image">Rasm manzili:</label>
+    <input type="text" class="form-control" name="image"  [(ngModel)]="img"> <br>
+    <label for="title">Sarlavhasi:</label>
+    <input type="text" class="form-control" name="title" [(ngModel)]="title"> <br>
+    <label for="desc">Batafsil malumot:</label>
+    <input type="text" class="form-control" name="desc" [(ngModel)]="desc"> <br>
+    <p> {{ textmeassage }} </p>
+    <div class="text-center">
+        <button class="btn btn-success" (click)="add()">Qo'shish</button>
+    </div>
+</div>

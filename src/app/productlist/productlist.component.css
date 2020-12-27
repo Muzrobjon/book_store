@@ -1,0 +1,17 @@
+img{
+    width: 280px;
+    height: 250px;
+}
+.container-fluid {
+    margin: 0 3% 0 3%;
+}
+.katak {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    border-radius: 10px;
+}
+.category {
+    width: 250px;
+}

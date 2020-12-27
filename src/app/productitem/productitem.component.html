@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+<div class="conatainer-fluid p-4 text-center text-white bg-info">
+  <h1> {{ book.title }} </h1>
+</div>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-5 mt-3">
+            <img src="{{ book.img }}" class="sm" alt="">
+        </div>
+        <div class="col-md-6">
+            <h2 class="mb-3">{{ book.title }}</h2>
+            <p class="text-muted mb-5"> {{ book.desc }} <br>
+               Narxi: {{ book.price }} so'm
+             </p>
+            <button (click)="sotibol(book)" class="btn btn-success btn-lg float-right">Sotib olish</button> &nbsp;
+            <button (click)="remove(book)" class="btn btn-danger btn-lg float-right">O'chirish</button>
+        </div>
+    </div>
+</div>

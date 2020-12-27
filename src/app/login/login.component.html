@@ -1,0 +1,28 @@
+<img src="assets/bg.jpg" class="rasm" alt="">
+<h1 class="display-4 mb-4 text-center"><span class="text-primary">BOOK</span>&nbsp;STORE</h1>
+<div class="container login p-3">
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit(loginForm.value)">
+    <div class="form-group form-group-lg mt-2">
+      <label class="sr-only" for="inlineFormInputGroup">Username</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Login</div>
+        </div>
+        <input type="text" formControlName="username" [(ngModel)]="login" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+</div>
+<div class="form-group form-group-lg">
+      <label class="sr-only" for="inlineFormInputGroup">Parol</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">Parol</div>
+        </div>
+        <input type="password" formControlName="password" [(ngModel)]="password" class="form-control" id="inlineFormInputGroup" placeholder="Parol">
+</div>
+<div class="text-center">
+  <button type="submit" class="btn btn-secondary mt-2 ml-15">Kirish</button> &nbsp;
+  <button routerLink="/register" class="btn btn-success mt-2 ml-15">Ro'yxatdan o'tish</button> &nbsp;
+</div>
+  <p *ngIf="errorMess"> {{ errorMess }} </p>
+</div>
+</div>
+  </form>

@@ -1,0 +1,25 @@
+<app-navbar></app-navbar>
+<div class="conatainer-fluid p-4 text-center text-white bg-info">
+    <a routerLink="/productslist" class="text-white float-left">Ortga</a>
+  <h1> Sotib olingan mahsulotlar </h1>
+</div>
+
+<div class="container">
+    <div *ngFor="let cartitem of cartlist">
+        <div class="card mb-3 mt-3" style="max-width: 1024px;">
+            <div class="row no-gutters mt-4">
+                <div class="col-md-4">
+                    <img src="{{ cartitem.img }}" class="card-img sm-3" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ cartitem.title }}</h5>
+                        <p class="card-text">{{ cartitem.desc }}</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <button (click)="remove(cartitem)" class="btn btn-danger float-right">O'chirish</button> &nbsp;
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
